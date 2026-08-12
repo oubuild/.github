@@ -23,6 +23,7 @@
 | C++ 文档查看 🟢 | [cpp.ryanuo.cc](https://cpp.ryanuo.cc/) | [GitHub](https://github.com/ryanuo/cpp-docs) |
 | 个人SKILLS 🟢 | [skills](https://github.com/ryanuo/skills) | [GitHub](https://github.com/ryanuo/skills) |
 | Markdown 在线编辑器 🟡 | [md.ryanuo.cc](https://md.ryanuo.cc/) | [GitHub](https://github.com/oubuild/md) |
+| tools 🟡 | [tools.ryanuo.cc](https://tools.ryanuo.cc/) | [GitHub](https://github.com/oubuild/html-tools) |
 | 在线绘图工具 🔵 | [draw.ryanuo.cc](https://draw.ryanuo.cc) | [GitHub](https://github.com/DayuanJiang/next-ai-draw-io) |
 
 ---
