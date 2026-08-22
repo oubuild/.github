@@ -12,6 +12,7 @@
 
 | Project | Demo | Source | type |
 | ------- | ---- | ------ | ---- |
+| Skills Manager | [oubuild/skills-manager](https://github.com/oubuild/skills-manager#skills-manager) | [GitHub](https://github.com/oubuild/skills-manager) | 🟢 |
 | QtShadcn | [qtshadcn.ryanuo.cc](https://qtshadcn.ryanuo.cc/) | [GitHub](https://github.com/QtShadcn/qtshadcn) |🟢|
 | C++ 文档查看 | [cpp.ryanuo.cc](https://cpp.ryanuo.cc/) | [GitHub](https://github.com/ryanuo/cpp-docs) |🟢| 
 | 简历生成器 | [resume.ryanuo.cc](https://resume.ryanuo.cc) | [GitHub](https://github.com/NxResume/DualMode-ResumeEditor) |🟢|
