@@ -17,7 +17,7 @@
 | C++ 文档查看 | [cpp.ryanuo.cc](https://cpp.ryanuo.cc/) | [GitHub](https://github.com/ryanuo/cpp-docs) |🟢| 
 | 简历生成器 | [resume.ryanuo.cc](https://resume.ryanuo.cc) | [GitHub](https://github.com/NxResume/DualMode-ResumeEditor) |🟢|
 | 图床管理器| [blazeb2.ryanuo.cc](https://bnd.ryanuo.cc) | [GitHub](https://github.com/blazeb2/blazeb2-next) |🟢|
-| 封面生成器 | [c.ryanuo.cc](https://c.ryanuo.cc/) | [GitHub](https://github.com/ryanuo/own-cover) |🟢| 
+| 封面生成器 | [cover.ryanuo.cc](https://cover.ryanuo.cc/) | [GitHub](https://github.com/ryanuo/own-cover) |🟢| 
 | 今天吃什么 | [eat.ryanuo.cc](https://eat.ryanuo.cc/) | [GitHub](https://github.com/ryanuo/whatToEat) |🟢| 
 | 网站截图 Web | [mts.ryanuo.cc](https://mts.ryanuo.cc/) | [GitHub](https://github.com/ryanuo/mts) |🟢| 
 | 网站监控 STATUS | [status.ryanuo.cc](https://status.ryanuo.cc/) | [GitHub](https://github.com/ryanuo/status) |🟢| 
