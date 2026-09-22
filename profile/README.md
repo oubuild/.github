@@ -12,6 +12,7 @@
 
 | Project | Demo | Source | type |
 | ------- | ---- | ------ | ---- |
+| 进制转换工具 | [utools-radix-converter](https://github.com/Lab0x-Embedded/utools-radix-converter) | [GITHUB](https://github.com/Lab0x-Embedded/utools-radix-converter)| 🟢 |
 | Skills Manager | [oubuild/skills-manager](https://github.com/oubuild/skills-manager#skills-manager) | [GitHub](https://github.com/oubuild/skills-manager) | 🟢 |
 | QtShadcn | [qtshadcn.ryanuo.cc](https://qtshadcn.ryanuo.cc/) | [GitHub](https://github.com/QtShadcn/qtshadcn) |🟢|
 | C++ 文档查看 | [cpp.ryanuo.cc](https://cpp.ryanuo.cc/) | [GitHub](https://github.com/ryanuo/cpp-docs) |🟢| 
