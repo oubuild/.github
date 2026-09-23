@@ -12,6 +12,7 @@
 
 | Project | Demo | Source | type |
 | ------- | ---- | ------ | ---- |
+| 通用芯片引脚查询 | [pinatlas.ryanuo.cc](https://pinatlas.ryanuo.cc/)| [Github](https://github.com/Lab0x-Embedded/pinatlas)| 🟢 |
 | 进制转换工具 | [utools-radix-converter](https://github.com/Lab0x-Embedded/utools-radix-converter) | [GitHub](https://github.com/Lab0x-Embedded/utools-radix-converter)| 🟢 |
 | Skills Manager | [oubuild/skills-manager](https://github.com/oubuild/skills-manager#skills-manager) | [GitHub](https://github.com/oubuild/skills-manager) | 🟢 |
 | QtShadcn | [qtshadcn.ryanuo.cc](https://qtshadcn.ryanuo.cc/) | [GitHub](https://github.com/QtShadcn/qtshadcn) |🟢|
