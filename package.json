@@ -1,0 +1,14 @@
+{
+  "name": "oubuild-github-profile",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate": "node --experimental-strip-types --no-warnings scripts/generate-profile.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.4",
+    "typescript": "^5.9.3",
+    "yaml": "^2.8.1"
+  }
+}
