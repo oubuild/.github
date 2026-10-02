@@ -44,9 +44,36 @@ jobs:
         env:
           DISPATCH_TOKEN: ${{ secrets.DEMOS_DISPATCH_TOKEN }}
         run: |
-          curl -fsS -X POST \
-            -H "Authorization: Bearer $DISPATCH_TOKEN" \
+          if [ -z "${DISPATCH_TOKEN//[[:space:]]/}" ]; then
+            echo "::error::secrets.DEMOS_DISPATCH_TOKEN 是空的，请到 oubuild/.github → Settings → Secrets and variables → Actions 配置"
+            exit 1
+          fi
+
+          # 有人会把 "Bearer " 一起存进 secret，这里容错剥一层，避免出现 "Bearer Bearer xxx"
+          token="${DISPATCH_TOKEN#Bearer }"
+          token="${token#bearer }"
+
+          # 不用 -f：它会把 GitHub 的解释性 JSON 一起吞掉，只剩一个没有上下文的 403
+          body_file="$(mktemp)"
+          status="$(curl -sS -o "$body_file" -w '%{http_code}' -X POST \
+            -H "Authorization: Bearer $token" \
             -H "Accept: application/vnd.github+json" \
             -H "X-GitHub-Api-Version: 2022-11-28" \
-            https://api.github.com/repos/ryanuo/ryanuo.cc/dispatches \
-            -d '{"event_type":"demos-sync"}'
+            -d '{"event_type":"demos-sync"}' \
+            https://api.github.com/repos/ryanuo/ryanuo.cc/dispatches)"
+
+          if [ "$status" != "204" ]; then
+            echo "::error::repository_dispatch 失败：HTTP $status（成功应为 204 No Content）"
+            echo "GitHub 返回："
+            cat "$body_file"
+            echo
+            echo "按状态码排查："
+            echo "  401 Bad credentials → secret 里的 token 无效或已过期（fine-grained PAT 有有效期）"
+            echo "  403 → token 有效但没有 ryanuo/ryanuo.cc 的写权限："
+            echo "        fine-grained：Repository access 勾上该仓库 + Permissions → Contents: Read and write"
+            echo "        classic：勾 repo scope，且 token 所属账号对该仓库有 push 权限"
+            echo "  404 → token 所属账号看不到该仓库"
+            exit 1
+          fi
+
+          echo "已触发 ryanuo.cc 的 demos-sync（HTTP 204）"
