@@ -33,6 +33,20 @@ jobs:
       - run: npm run generate
 
       - uses: stefanzweifel/git-auto-commit-action@v5
+        id: commit
         with:
           commit_message: 'chore: generate profile from data.yaml'
           file_pattern: profile/README.md profile/projects.json
+
+      # 项目数据变了就让 ryanuo.cc 重新同步快照并触发部署（那边会顺带重抓各应用页面的 og:image）
+      - name: Notify ryanuo.cc to sync demos
+        if: steps.commit.outputs.changes_detected == 'true'
+        env:
+          DISPATCH_TOKEN: ${{ secrets.DEMOS_DISPATCH_TOKEN }}
+        run: |
+          curl -fsS -X POST \
+            -H "Authorization: Bearer $DISPATCH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            https://api.github.com/repos/ryanuo/ryanuo.cc/dispatches \
+            -d '{"event_type":"demos-sync"}'
