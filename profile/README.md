@@ -17,7 +17,7 @@
 
 | Project | Demo | Source | Type |
 | --- | --- | --- | --- |
-| Shutter 截图 | [Demo](https://oubuild.github.io/Shutter/) | [Source](https://github.com/oubuild/Shutter) | 🟢 |
+| Shutter 截图 | [Demo](https://shutter.ryanuo.cc/) | [Source](https://github.com/oubuild/Shutter) | 🟢 |
 | 通用芯片引脚查询 | [Demo](https://pinatlas.ryanuo.cc/) | [Source](https://github.com/Lab0x-Embedded/pinatlas) | 🟢 |
 | 嵌入式工具箱 | [Demo](https://embedkit.ryanuo.cc/) | [Source](https://github.com/Lab0x-Embedded/embedkit) | 🟢 |
 | 工业边缘网关 | [Demo](https://github.com/Lab0x-Embedded/industrial-edge-gateway) | [Source](https://github.com/Lab0x-Embedded/industrial-edge-gateway) | 🟢 |
